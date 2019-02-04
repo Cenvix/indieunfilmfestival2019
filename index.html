@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
 
    <style>
 
@@ -100,16 +100,16 @@
     }
        
     body{
-        background: url(https://i.imgur.com/kWsgeNw.png);
+        background: url(assets/BG.png);
         
-        background-size: cover;
+        background-size: contain;
         background-position: top;
         background-repeat: repeat-y;
     
     }
        @media screen and (max-width: 800px){
            body{
-                background: url(https://i.imgur.com/kWsgeNw.png);
+                background: url(assets/BG.png);
                 background-size: contain;
                 background-position: top;
                 background-repeat: repeat-y;
@@ -162,10 +162,79 @@
     }
 
    </style>
-
    <!-- Script
-   ================================================== -->
+   ================================================== 
 	<script src="http://static.tumblr.com/k8kqqqs/F6Tozxm4k/test.js"></script>
+
+ <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery/jquery-3.3.1.min.js"></script>
+   <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoint.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+   <script type="text/javascript">
+
+   $(window).on('load',function() {
+        setTimeout(function(){
+              $('.loader').fadeOut('slow', function () {
+              });
+          },1000); // set the time here
+      })
+
+  </script>
+	
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("May 18, 2019 23:59:59").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+		    // Get todays date and time
+		    var now = new Date().getTime();
+		    
+		    if(now>new Date("May 18, 2019 23:59:59").getTime()){
+		        //document.getElementById("extended").style.display = "block"; 
+		        countDownDate = new Date("May 20, 2019 23:59:59").getTime();
+		    }
+		    
+		    // Find the distance between now an the count down date
+		    var distance = countDownDate - now;
+		    
+		    // Time calculations for days, hours, minutes and seconds
+		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		    // Output the result in an element with id="timer"
+		    document.getElementById("timer_day").innerHTML = days;
+		    document.getElementById("timer_hour").innerHTML = hours;
+		    document.getElementById("timer_min").innerHTML = minutes;
+		    document.getElementById("timer_sec").innerHTML = seconds;
+		    
+            
+
+  		    //hello vincent!
+		    //hello martin!
+            
+		    // If the count down is over, write some text 
+		    if (distance < 0) {
+		        clearInterval(x);
+		        //document.getElementById("timer").innerHTML = "Call for Entries is now closed.";
+		    }
+		}, 1000);
+	</script>
+
+	<!--<script>
+	 setTimeout("animatedsplash.src='images/iufsplash.gif'",2000)
+	</script>-->
 
    <!-- Favicons
 	================================================== 
@@ -208,7 +277,7 @@
             
             
             <div class="countdown" style = "margin-bottom: : 50px; word-spacing: 30px; position:relative">
-            <img class ="extended-stamp" id="extended" src="https://78.media.tumblr.com/0f7f2045ca15c3dc8b3dbf3f88951b1d/tumblr_p8u157LuF21wj0sq8o1_1280.png"/>
+            <!--<img class ="extended-stamp" id="extended" src="https://78.media.tumblr.com/0f7f2045ca15c3dc8b3dbf3f88951b1d/tumblr_p8u157LuF21wj0sq8o1_1280.png"/>-->
             <div class="banner-text">
                 <table id="countdownTable">
                     <tr>
@@ -265,7 +334,7 @@
          
          
          
-        <img src="https://78.media.tumblr.com/f8fc3a606c3da60f237efa3b0cf6e522/tumblr_p00oue6cur1wj0sq8o1_1280.png" style="max-width: 75%; max-height: 50%; margin-top:20px; margin-bottom: 30px"/>
+        <img src="assets/IUF-Logo-Type.png" style="max-width: 75%; max-height: 50%; margin-top:20px; margin-bottom: 30px"/>
         
 	    <div class="banner-text">
 
@@ -294,7 +363,7 @@
        <div style="height: 10%">
             <center>
                 <p class="scrolldown">
-                <a class="smoothscroll" href="#about"><i class="fa fa-angle-down" style="color: #141418;"></i></a>
+                <a class="smoothscroll" href="#about"><i class="fab fa-angle-down" style="color: #141418;"></i></a>
                 </p>
 	
           </center>
@@ -331,7 +400,7 @@
     
 </div>
            <p class="scrolldown" style="padding-top: 10%">
-         <a class="smoothscroll" href="#categories"><i class="fa fa-angle-down" style="color: #222222;"></i></a>
+         <a class="smoothscroll" href="#categories"><i class="fab fa-angle-down" style="color: #222222;"></i></a>
       </p>
 
     
@@ -934,9 +1003,9 @@
              
              <div style="width: 100%; position: relative">
                  <div style="width: 30%;text-align: center"><p>
-      <a href="http://facebook.com/IndieUnfilmFestival/" target="_blank" style="font-size: 80%"><i class="fa fa-facebook"></i></a>
+      <a href="http://facebook.com/IndieUnfilmFestival/" target="_blank" style="font-size: 80%"><i class="fab fa-facebook"></i></a>
                  &nbsp;
-      <a href="https://twitter.com/dlsuGMG" target="_blank"><i class="fa fa-twitter" style="font-size: 85%"></i></a>
+      <a href="https://twitter.com/dlsuGMG" target="_blank"><i class="fab fa-twitter" style="font-size: 85%"></i></a>
       </p>
                      </div>
             <div style="position: absolute; top: 50%; left: 60%;max-width: 350px; width: 20%;border-top:5px solid #DB1947;"></div>
@@ -976,81 +1045,13 @@
         <br>
 
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="fa fa-angle-up" style="font-size: 30px"></i></a></div>
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="fab fa-angle-up" style="font-size: 30px"></i></a></div>
 
       </div>
 
    </footer> <!-- Footer End-->
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="http://static.tumblr.com/k8kqqqs/ybiozvwri/jquery.flexslider.js"></script>
-   <script src="http://static.tumblr.com/k8kqqqs/Acwozvwrp/waypoints.js"></script>
-   <script src="http://static.tumblr.com/k8kqqqs/3YXozvwre/jquery.fittext.js"></script>
-   <script src="http://static.tumblr.com/k8kqqqs/NG3ozvwrm/magnific-popup.js"></script>
-   <script src="http://static.tumblr.com/k8kqqqs/SSwozvwr4/init.js"></script>
-
-   <script type="text/javascript">
-
-   $(window).load(function() {
-        setTimeout(function(){
-              $('.loader').fadeOut('slow', function () {
-              });
-          },1000); // set the time here
-      })
-
-  </script>
-	
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("May 18, 2018 23:59:59").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-		    // Get todays date and time
-		    var now = new Date().getTime();
-		    
-		    if(now>new Date("May 18, 2018 23:59:59").getTime()){
-		        document.getElementById("extended").style.display = "block"; 
-		        countDownDate = new Date("May 25, 2018 23:59:59").getTime();
-		    }
-		    
-		    // Find the distance between now an the count down date
-		    var distance = countDownDate - now;
-		    
-		    // Time calculations for days, hours, minutes and seconds
-		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		    // Output the result in an element with id="timer"
-		    document.getElementById("timer_day").innerHTML = days;
-		    document.getElementById("timer_hour").innerHTML = hours;
-		    document.getElementById("timer_min").innerHTML = minutes;
-		    document.getElementById("timer_sec").innerHTML = seconds;
-		    
-            
-
-  		    //hello vincent!
-		    //hello martin!
-            
-		    // If the count down is over, write some text 
-		    if (distance < 0) {
-		        clearInterval(x);
-		        document.getElementById("timer").innerHTML = "Call for Entries is now closed.";
-		    }
-		}, 1000);
-	</script>
-
-	<script>
-	 setTimeout("animatedsplash.src='images/iufsplash.gif'",2000)
-	</script>
+  
 
 
 

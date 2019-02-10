@@ -20,6 +20,8 @@
 	<!-- CSS
     ================================================== -->
     
+    
+    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/default.css">
@@ -27,7 +29,6 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     
-    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
 
    <style>
 
@@ -166,72 +167,7 @@
    ================================================== 
 	<script src="http://static.tumblr.com/k8kqqqs/F6Tozxm4k/test.js"></script>
 
- <!-- Java Script
-   ================================================== -->
-   <script src="js/jquery/jquery-3.3.1.min.js"></script>
-   <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoint.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
-   <script type="text/javascript">
-
-   $(window).on('load',function() {
-        setTimeout(function(){
-              $('.loader').fadeOut('slow', function () {
-              });
-          },1000); // set the time here
-      })
-
-  </script>
-	
-	<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("May 18, 2019 23:59:59").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-		    // Get todays date and time
-		    var now = new Date().getTime();
-		    
-		    if(now>new Date("May 18, 2019 23:59:59").getTime()){
-		        //document.getElementById("extended").style.display = "block"; 
-		        countDownDate = new Date("May 20, 2019 23:59:59").getTime();
-		    }
-		    
-		    // Find the distance between now an the count down date
-		    var distance = countDownDate - now;
-		    
-		    // Time calculations for days, hours, minutes and seconds
-		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		    // Output the result in an element with id="timer"
-		    document.getElementById("timer_day").innerHTML = days;
-		    document.getElementById("timer_hour").innerHTML = hours;
-		    document.getElementById("timer_min").innerHTML = minutes;
-		    document.getElementById("timer_sec").innerHTML = seconds;
-		    
-            
-
-  		    //hello vincent!
-		    //hello martin!
-            
-		    // If the count down is over, write some text 
-		    if (distance < 0) {
-		        clearInterval(x);
-		        //document.getElementById("timer").innerHTML = "Call for Entries is now closed.";
-		    }
-		}, 1000);
-	</script>
-
+ 
 	<!--<script>
 	 setTimeout("animatedsplash.src='images/iufsplash.gif'",2000)
 	</script>-->
@@ -326,7 +262,7 @@
                 </svg>-->
                 
                  
-	       	
+	       	</div>
 
             </center>
         </div>
@@ -348,7 +284,7 @@
         </div>  
         <br>
         <center>
-        <a  href="https://tinyurl.com/IUF2018CHEDEndorsement" target="_blank"><h4><span style="background-color: #AAD8CE; padding:5px; padding-left:10px;padding-right:10px">View CHED Endorsement</span></h4></a></div>
+        <a  href="https://tinyurl.com/IUF2018CHEDEndorsement" target="_blank"><h4><span style="background-color: #AAD8CE; padding:5px; padding-left:10px;padding-right:10px">View CHED Endorsement</span></h4></a>
         </center>
         <!--
        <img onclick="window.open('https://tinyurl.com/IUF2018CHEDEndorsement');"  src="https://78.media.tumblr.com/c63c4c1b9cf62eeebe2650bebebad70c/tumblr_p8bkk8LeQ01wj0sq8o1_400.png" style="max-width: 30%; max-height: 20%;margin-bottom: 30px; cursor: pointer"/>-->
@@ -364,6 +300,7 @@
             <center>
                 <p class="scrolldown">
                 <a class="smoothscroll" href="#about"><i class="fab fa-angle-down" style="color: #141418;"></i></a>
+                    
                 </p>
 	
           </center>
@@ -386,11 +323,11 @@
 
 <div class="row">
     
-  <div class="six columns">
+  <div class="row">
   <iframe allowFullScreen frameborder="0" mozallowfullscreen src="https://player.vimeo.com/video/256367060" webkitAllowFullScreen width="100%"></iframe><!--<img src="https://78.media.tumblr.com/19c70fd512b3240b75d9526b9bb707e5/tumblr_p00qm2kmq11wj0sq8o1_1280.png" style="max-width: 100%"/>-->
   </div>
-  <div class="six columns" style="margin-top: 5%;">
-    <p align="left">
+  <div class="row" style="margin-top: 5%;">
+    <p align="justify">
     <b>Indie Un-film Festival (IUF)</b> is an intercollegiate digital film festival organized by the DLSU Green Media Group. It celebrates film by showcasing the competition’s finalists and a plenary talk involving the country’s renowned artists. 
 <br>
 <br>
@@ -503,9 +440,9 @@
     </div></center>
        <div style="position: relative; bottom: 0px;">
            <center>
-           <a class="smoothscroll" href="#guidelines"><button  class="BTNred">GUIDELINES</button></a>
+           <a class="smoothscroll" href="#guidelines"><button  class="BTN1">GUIDELINES</button></a>
           <br>
-           <button class="BTNwhite" onclick="window.open('http://tinyurl.com/IUF2018OnlineAppForm')">JOIN</button>  
+               <button class="BTN2" onclick="window.open('http://tinyurl.com/IUF2018OnlineAppForm')">JOIN</button>  
            <br>
 
        </center>
@@ -1027,7 +964,7 @@
 
    <!-- footer
    ================================================== -->
-   <footer style="background-color: #F2F7FC;">
+   <footer style="background-color: #e9efed;">
 
      <center>
         <a href="#home" class="smoothscroll">HOME</a> &nbsp; &nbsp;
@@ -1053,6 +990,72 @@
 
   
 
+
+    <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery/jquery-3.3.1.min.js"></script>
+   <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoint.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+   <script type="text/javascript">
+
+   $(window).on('load',function() {
+        setTimeout(function(){
+              $('.loader').fadeOut('slow', function () {
+              });
+          },1000); // set the time here
+      })
+
+  </script>
+	
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("May 18, 2019 23:59:59").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+		    // Get todays date and time
+		    var now = new Date().getTime();
+		    
+		    if(now>new Date("May 18, 2019 23:59:59").getTime()){
+		        //document.getElementById("extended").style.display = "block"; 
+		        countDownDate = new Date("May 20, 2019 23:59:59").getTime();
+		    }
+		    
+		    // Find the distance between now an the count down date
+		    var distance = countDownDate - now;
+		    
+		    // Time calculations for days, hours, minutes and seconds
+		    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		    // Output the result in an element with id="timer"
+		    document.getElementById("timer_day").innerHTML = days;
+		    document.getElementById("timer_hour").innerHTML = hours;
+		    document.getElementById("timer_min").innerHTML = minutes;
+		    document.getElementById("timer_sec").innerHTML = seconds;
+		    
+            
+
+  		    //hello vincent!
+		    //hello martin!
+            
+		    // If the count down is over, write some text 
+		    if (distance < 0) {
+		        clearInterval(x);
+		        //document.getElementById("timer").innerHTML = "Call for Entries is now closed.";
+		    }
+		}, 1000);
+	</script>
 
 
 </body>

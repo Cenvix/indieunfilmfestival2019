@@ -242,7 +242,7 @@ ul#nav li.current a { color: #DB1947; }
    margin-bottom: 12px;
 }
 #about p,b {
-   line-height: 175%; font-size: 25px; text-align: justify;
+   line-height: 175%; font-size: 30px; text-align: justify;
 }
 
 @media screen and (max-width: 600px){
@@ -598,6 +598,14 @@ ul#nav li.current a { color: #DB1947; }
     transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 600px){
+    .categories-item{
+    width: 300px;
+    height: 300px;
+    }
+
+}
+
 
 .categories-item .item-wrap {
    background: #fff;
@@ -798,28 +806,32 @@ ul#nav li.current a { color: #DB1947; }
     width: 30%;
 }
 
-#howtojoin button.BTNred {
-	background-color: #DB1947;
+#howtojoin button.BTN1 {
+	background-color: #81DBDA;
+    color: #D0544A;
+        
+    font-weight: 700;
+    font-size: 50px
+}
+
+#howtojoin button.BTN2 {
+	background-color: #261F63;
+    color:#FFC58a;
+    font-weight: 700;
+    font-size: 50px
+}
+
+#howtojoin button.BTN1:hover,
+#howtojoin button.BTN1:active {
+   background-color: #D0544A; 
+    color: #e9efed;
+}
+
+#howtojoin button.BTN2:hover,   
+#howtojoin button.BTN2:active {
+    background-color: #FFC58a;
+    color: #e9efed;
     
-}
-
-#howtojoin button.BTNwhite {
-	background-color: #F2F7FC; 
-    border: 5px solid #DB1947;
-    color:#DB1947;
-    padding: 7px;
-}
-
-#howtojoin button.BTNred:hover,
-#howtojoin button.BTNred:active {
-   background-color: #EE886F; 
-    color: #F2F7FC;
-}
-
-#howtojoin button.BTNwhite:hover,   
-#howtojoin button.BTNwhite:active {
-   border-color: #EE886F; 
-    color: #EE886F;
 }
 
 #howtojoin p span {

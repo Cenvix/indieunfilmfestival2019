@@ -586,7 +586,7 @@ ul#nav li.current a { color: #DB1947; }
     padding: 25px;
     display: inline-block;
     text-align: center;
-    margin: 2% 5% 2% 5%;
+    margin: 1% 3% 1% 3%;
     position: relative;
     
 
@@ -811,14 +811,29 @@ ul#nav li.current a { color: #DB1947; }
     color: #D0544A;
         
     font-weight: 700;
-    font-size: 50px
+    font-size: 50px;
 }
+
+
 
 #howtojoin button.BTN2 {
 	background-color: #261F63;
     color:#FFC58a;
     font-weight: 700;
-    font-size: 50px
+    font-size: 50px;
+}
+
+@media screen and (max-width: 600px){
+    
+    #howtojoin button.BTN1 {
+
+        font-size: 30px;
+    }
+
+    #howtojoin button.BTN2 {
+
+        font-size: 30px;
+    }
 }
 
 #howtojoin button.BTN1:hover,
@@ -995,21 +1010,20 @@ padding: 5% 10% 5% 10%;
 
 #submission_process a{
     text-decoration: underline;
-    color: #DB1947;
+    color: #D3544B;
 }
 
 
 #submission_process h1 {
     font: Bold 250% 'Montserrat', sans-serif;
-    color: #DB1947;
+    color: #D3544B;
     margin: 0px;
     padding:0 0 0 0;
     max-width: 50%;
-    border-bottom: 3px solid #DB1947;
 }
 #submission_process h2 {
    font: Bold 100% 'Montserrat', sans-serif;
-   color: #DB1947;
+   color: #D3544B;
 }
 
 
@@ -1080,7 +1094,7 @@ padding: 5% 10% 5% 10%;
     height: 80%;
     width: 0px;
     left: 50%;
-    border-left:5px solid #DB1947;
+    border-left:5px solid #D3544B;
     z-index: 1;
 }
 @media screen and (max-width:770px){
@@ -1100,10 +1114,10 @@ padding: 5% 10% 5% 10%;
         left: 0%;
     width: 80%;
         height: 20px;
-    border-top:5px solid #DB1947;
+    border-top:5px solid #D3544B;
         
-    border-left:0px solid #DB1947;
-    border-bottom:5px solid #DB1947;
+    border-left:0px solid #D3544B;
+    border-bottom:5px solid #D3544B;
     z-index: 1;
 }
     

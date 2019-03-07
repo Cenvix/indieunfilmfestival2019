@@ -1,0 +1,72 @@
+<html>
+        <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="jquery-3.3.1.js"></script>
+        </head>
+        <body>
+        <script src="three.js"></script>
+
+        <script src="FBXLoader.js"></script>
+        <script src="inflate.min.js"></script>
+		
+		
+		
+        <script>
+		
+		
+            // simplified on three.js/examples/webgl_loader_fbx.html         
+            
+            var curObject;
+                
+            function main() {
+                // renderer                                                                 
+                const renderer = new THREE.WebGLRenderer({antialias: true, alpha:true});
+                renderer.setClearColor( 0x000000, 0 );
+                renderer.setSize(500, 500);
+                document.body.appendChild(renderer.domElement);
+
+                // camera                                                                   
+                const camera = new THREE.PerspectiveCamera(30, 500 / 500, 1, 10000);
+                camera.lookAt(new THREE.Vector3(0, 0, 0));
+                camera.position.set(1500, 0, 0);
+                camera.lookAt(new THREE.Vector3(0, 0, 0));
+                camera.up.set(0, 1, 0);
+                
+
+                // scene and lights                                                         
+                const scene = new THREE.Scene();
+                var directionalLight = new THREE.DirectionalLight( 0xffffff,1 );
+                directionalLight.position.set(3,2,-3);
+                scene.add( directionalLight );
+
+                // load fbx model and texture                                               
+                const loader = new THREE.FBXLoader();
+                loader.load("hands.fbx", model => {
+                    // model is a THREE.Group (THREE.Object3D)                            
+                    curObject=model;
+//                    const mixer = new THREE.AnimationMixer(model);
+//                    // animations is a list of THREE.AnimationClip                          
+//                     mixer.clipAction(model.animations[10]).play();
+                    scene.add(model);
+                    //objs.push({model, mixer});
+                    console.log(curObject)
+                    
+                });
+
+                // animation rendering                                                      
+                const clock = new THREE.Clock();
+                (function animate() {
+                    // animation with THREE.AnimationMixer.update(timedelta)                
+//                    objs.forEach(({mixer}) => {mixer.update(clock.getDelta()*3);});
+                    if(curObject!=null){
+                        curObject.rotation.y+=1*clock.getDelta();
+                    }
+                    
+                    renderer.render(scene, camera);
+                    requestAnimationFrame(animate);
+                })();
+            }
+            const objs = main();
+        </script>
+        </body>
+</html>

@@ -175,7 +175,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 
 /* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; background-color: #EE886F}
+#nav-wrap > a.mobile-btn { display: none; background-color: #D0544A}
 
 ul#nav {
    min-height: 48px;
@@ -1428,11 +1428,11 @@ call-to-action .button {
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #DB1947; }
-#contact a:hover, #contact a:focus { color: #EE886F; }
+#contact a, #contact a:visited  { color: #1F8989; }
+#contact a:hover, #contact a:focus { color: #D0544A; }
 
 #contact h1 {
-   font: 40px/24px 'Montserrat', sans-serif;
+   font: 200% 'Montserrat', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #141418;
@@ -1440,6 +1440,31 @@ call-to-action .button {
 line-height: normal;
 }
 #contact h1 span { display: none; }
+
+@media screen and (max-width: 700px){
+    
+    #contact h1 {
+                   font: 150% 'Montserrat', sans-serif;
+                }
+}
+
+#contact h2 {
+   font: 250% 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #141418;
+   margin-bottom: 6px;
+line-height: normal;
+}
+
+@media screen and (max-width: 700px){
+    
+    #contact h2 {
+                   font: 100% 'Montserrat', sans-serif;
+                }
+}
+
+#contact h2 span { display: none; }
 
 #contact h4 {
    font: 16px/24px 'Montserrat', sans-serif;
@@ -1568,7 +1593,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #ee8866;
+	background-color: #D0544A;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -1581,4 +1606,4 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #DB1947; }
+#go-top a:hover { background-color: #1F8989; }

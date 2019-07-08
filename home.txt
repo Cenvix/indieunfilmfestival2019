@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<title>Indie-Un Film Festival 2018</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+    
+<link rel="shortcut icon" type="image/x-icon" href="assets/IUF-Logo.png" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- UPLOAD THESE -->
+<link rel="stylesheet" href="colors.css">
+<link rel="stylesheet" href="mytemplate.css">
+    
+<style>
+    
+    
+    body {
+    font-family: "Montserrat", sans-serif;
+    background:linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(170,216,206,.9) 100%);
+    background-repeat: repeat-x;
+    }
+    
+
+    
+    .mySlides {display: none}
+    
+    
+    
+    
+        @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+    }
+    
+    
+    iframe {display:none !important;}
+    
+    iframe.video {display:block !important; height: 50%;}
+    
+    h1{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h2{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h3{
+      font-family: "Montserrat", sans-serif;  
+        font-weight: 700;
+    }
+    h4{
+      font-family: "Montserrat", sans-serif;  
+    }
+    
+    .w3-button.w3-iuf-red:hover{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+    .w3-button:hover{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+</style>
+    
+     <script type="text/javascript">
+        $(window).load(function() {
+        setTimeout(function(){
+              $('.loader').fadeOut('slow', function () {
+              });
+          },1000); // set the time here
+      })
+    </script>
+<body>
+<div class="loader"></div>
+    
+<div id="videoOverlay" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+      <iframe id="video" class="video" allowFullScreen frameborder="0" mozallowfullscreen src="https://player.vimeo.com/video/256367060" webkitAllowFullScreen width="100%"></iframe>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+    
+<!-- Navbar -->
+<div class="w3-top">
+    <div style="position: fixed; width: 60px" >
+        <img src="https://78.media.tumblr.com/19c70fd512b3240b75d9526b9bb707e5/tumblr_p00qm2kmq11wj0sq8o1_1280.png" style="width: 100%;"/>
+      </div>
+    
+  <div class="w3-bar w3-xlarge w3-iuf-white w3-card">
+    
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+      <a href="#" class="w3-bar-item" style="width: 5%"></a>
+    <a href="/about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">EVENTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-iuf-turquoise">
+        <a href="#" class="w3-bar-item w3-button">CALENDAR</a>
+        <a href="#" class="w3-bar-item w3-button">TALKS</a>
+        <a href="#" class="w3-bar-item w3-button">SCREENINGS</a>
+          <a href="#" class="w3-bar-item w3-button">AWARDS NIGHT</a>
+      </div>
+    </div>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FINALIST</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JUDGES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a>
+    <a class="w3-bar-item w3-right w3-hide-small w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="/tickets">GET TICKETS</a>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-iuf-turquoise w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FINALIST</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JUDGES</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPONSORS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPONSORS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images 
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+-->
+    <div class="w3-content w3-padding-64">
+        <center>
+            <img  src="https://78.media.tumblr.com/f8fc3a606c3da60f237efa3b0cf6e522/tumblr_p00oue6cur1wj0sq8o1_1280.png" style=" width: 50%; min-width: 100px;	animation: float 2s ease-in-out infinite;"/>
+        </center>
+                
+    </div>
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center" style="max-width:800px" id="band">
+    <h3 class="w3-button w3-iuf-red w3-round-large" onclick="openOverlay()">CLICK HERE TO EXPLORE</h3>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-margin-top">
+    <center>
+        <img src="https://78.media.tumblr.com/f084ed3fcd2f94735f460c0f37aa53e4/tumblr_ozvoebwrCq1w6qdn7o1_1280.png" style="width: 20%; min-width: 100px;"/>
+    </center>
+      
+    <div>
+        
+            &copy; Copyright 2019 DLSU Green Media Group
+        
+        <br>
+    </div>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function openOverlay() {
+    document.getElementById("videoOverlay").style.height = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeOverlay() {
+    document.getElementById("videoOverlay").style.height = "0%";
+    
+    var $frame = $('iframe#video');
+
+    // saves the current iframe source
+    var vidsrc = $frame.attr('src');
+
+    // sets the source to nothing, stopping the video
+    $frame.attr('src',''); 
+
+    // sets it back to the correct link so that it reloads immediately on the next window open
+    $frame.attr('src', "https://player.vimeo.com/video/256367060");
+}
+
+	
+</script>
+
+    
+    
+
+</body>
+</html>

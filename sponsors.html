@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<title>Indie-Un Film Festival 2019</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+    
+<link rel="shortcut icon" type="image/x-icon" href="assets/IUF-Logo.png" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- UPLOAD THESE -->
+<link rel="stylesheet" href="colors.css">
+<link rel="stylesheet" href="mytemplate.css">
+    
+<style>
+    
+    
+    body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f2f7fc;
+    background-repeat: repeat-x;
+    line-height: 1.1;
+    }
+    
+
+    
+    .mySlides {display: none}
+    
+    
+    
+    
+        
+    
+    
+    iframe {display:none !important;}
+    
+    iframe.video {display:block !important; height: 50%;}
+    
+    h1{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        padding: 20px;
+    }
+    h2{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h3{
+      font-family: "Montserrat", sans-serif;  
+        font-weight: 700;
+    }
+    h4{
+      font-family: "Montserrat", sans-serif;  
+    }
+    
+    .w3-button.w3-iuf-red:hover{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+    .w3-button.w3-focus,.w3-button:hover, .w3-button:focus{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+    
+     img{
+        padding: 5px;
+    }
+    
+    /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background: linear-gradient(to top, #db1947ee 5%, #ee886fF5 100%); /* Black w/opacity */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    opacity: 0;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 20%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    height: 100%;
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #09060a;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color:#f2f7fc;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+    
+</style>
+    
+     <script type="text/javascript">
+        $(window).load(function() {
+        setTimeout(function(){
+              $('.loader').fadeOut('slow', function () {
+              });
+          },1000); // set the time here
+      })
+    </script>
+<body>
+<div class="loader"></div>
+    
+<div id="videoOverlay" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="w3-xxlarge overlay-content w3-iuf-text-white">
+      <img class="w3-round-xxlarge" src="https://i.imgur.com/4xgC9NC.jpg" width="20%">
+      <h2>Website by</h2>
+      <h1>Martin and Vincent Productions (MVP)</h1>
+      <i class="fa fa-heart"></i>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+    
+<!-- Navbar -->
+<div class="w3-top" style="z-index: 100;">
+    <div style="position: fixed; width: 50px" >
+        <a href="http://www.indieunfilmfestival.com"><img src="assets/IUF-Logo.png" style="width: 100%;"/></a>
+      </div>
+    
+  <div class="w3-bar w3-large w3-iuf-white w3-card">
+    
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+      <a href="#" class="w3-bar-item" style="width: 5%"></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">EVENTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-iuf-yellow">
+        <a href="calendar.html" class="w3-bar-item w3-button">CALENDAR</a>
+<!--        <a href="talks" class="w3-bar-item w3-button">TALKS</a>-->
+        <a href="screenings.html" class="w3-bar-item w3-button">SCREENINGS</a>
+          <a href="awardsnight.html" class="w3-bar-item w3-button">AWARDS NIGHT</a>
+      </div>
+    </div>
+    <a href="finalists.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FINALISTS</a>
+    <a href="judges.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JUDGES</a>
+<!--    <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a> -->
+      <a href="faqs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQs</a>
+    <a class="w3-bar-item w3-right w3-hide-small w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="https://tinyurl.com/IUF2019Tickets">GET TICKETS</a>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-iuf-yellow w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:50px;padding-bottom:10px">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+    <a class="w3-padding-large">EVENTS</a>
+    <ul>
+        <a href="calendar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CALENDAR</a>
+<!--        <a href="talks.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TALKS</a>-->
+        <a href="screenings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCREENINGS</a>
+        <a href="awardsnight.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AWARDS NIGHTS</a>
+    </ul>
+    <a href="finalists.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FINALIST</a>
+    <a href="judges.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JUDGES</a>
+    <!-- <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPONSORS</a> -->
+    <a href="faqs.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAQs</a>
+    <a href="#" class="w3-bar-item w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="https://tinyurl.com/IUF2019Tickets">GET TICKETS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-container w3-center" style="margin-top:46px;">
+    <div class="w3-container w3-row "style="margin-top:60px;margin-bottom:60px;margin-left:5%;margin-right:5%">
+        <div class="w3-row"><img src="https://i.imgur.com/gkFAaAh.png" style="width:40%"/></div>
+        <div class="w3-row  w3-padding w3-xlarge" style="text-align: justify;">
+            <div class="w3-col m5 w3-left">
+                <h1 class="w3-center" onclick="click3()">CO-PRESENTORS</h1>
+                <div class="w3-col m12 w3-center"><img src="https://i.imgur.com/7hckrEo.png" style="width: 50%"/></div>
+            </div>
+            <div class="w3-col m5 w3-right">
+                <h1 class="w3-center" onclick="click1()">MAJOR SPONSOR</h1>
+                <div class="w3-col m12 w3-center"><img src="https://i.imgur.com/83Lbgvc.png" style="width: 50%"/></div>
+            </div>
+        </div>
+        <div class="w3-row w3-padding" style="text-align: justify;">
+            <div class="w3-col m5 w3-left">
+                <h1 class="w3-center"onclick="click2()">VENUE PARTNER</h1>
+                <div class="w3-col m12 w3-center"><img src="https://i.imgur.com/LCHVGC0.png" style="width: 50%"/></div>
+            </div>
+            <div class="w3-col m5 w3-right">
+                <h1 class="w3-center">MINOR SPONSORS</h1>
+                <div class="w3-row w3-center"><img src="https://i.imgur.com/8ZzpfTQ.gif" style="width: 50%"/></div>
+                <div class="w3-row w3-center"><img src="https://i.imgur.com/IjPqXmK.png" style="width: 50%"/></div>
+            </div>
+        </div>
+        <div class="w3-row w3-padding" style="text-align: justify;">
+            <div class="w3-col m5 w3-left">
+                <h1 class="w3-center">ORGANIZATION PARTNERS</h1>
+                <div style="w3-row">
+                    <div class="w3-col m4"><img src="https://i.imgur.com/GFj8Kk8.png" style="width: 100%"/></div>
+                    <div class="w3-col m4"><img src="https://i.imgur.com/P5lErvr.png" style="width: 100%"/></div>
+                    <div class="w3-col m4"><img src="https://i.imgur.com/8mqvPB6.png" style="width: 170%;margin-left:-30%; margin-top:-15%"/></div>
+                </div>
+                <div class="w3-row w3-center"><img src="https://i.imgur.com/dg2cOby.png" style="width: 90%"/></div>
+                
+                
+                <div class="w3-row w3-center"><img src="https://i.imgur.com/ynsfsOO.jpg" style="width: 70%"/></div>
+            </div>
+            <div class="w3-col m5 w3-right">
+                <h1 class="w3-center">MEDIA PARTNERS</h1>
+                <div style="w3-row" style="width: 100%">
+                    <div class="w3-col m4 w3-left"><img src="https://i.imgur.com/v41cqyH.png" style="width: 100%"/></div>
+                    <div class="w3-col m8  w3-right"><img src="https://i.imgur.com/qy0KI0f.jpg" style="width: 100%"/></div>
+                </div>
+                <div class="w3-row"></div>
+                <div style="w3-row w3-left" style="width: 100%">
+                    <div class="w3-col m8 w3-left">
+                        
+                        <div class="w3-row" style="background: black"><img src="https://i.imgur.com/RcY1Fsn.png" style="width: 100%"/></div>
+                        <div class="w3-row"><img src="https://i.imgur.com/5mJwhJU.png" style="width: 100%"/></div>
+                    </div>
+                    <div class="w3-col m4 w3-right"><img src="https://i.imgur.com/1RUpTJB.png" style="width: 100%"/></div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+<!-- End Page Content -->
+</div>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-margin-top" style=" width: 100%; ">
+    
+    <center>
+        <img src="https://78.media.tumblr.com/f084ed3fcd2f94735f460c0f37aa53e4/tumblr_ozvoebwrCq1w6qdn7o1_1280.png" style="width: 20%; min-width: 100px;"/>
+    </center>
+      
+    <div>
+        
+            &copy; Copyright 2019 DLSU Green Media Group
+        
+        <br>
+    </div>
+</footer>
+<!-- End of Footer-->
+<!-- BACKGROUND SHAPES -->
+<div class="w3-row shapeBG" >
+    <div class="w3-col m6 w3-left image-container" style="height: 100%">
+        <div class="shapeContainer">
+            <img class="shape" src="https://i.imgur.com/DHP5frv.png" style=" left: -20%; top:-45%; animation: floatDiagonal2 3s ease-in-out infinite;"/>
+            
+            <img class="shape" src="https://i.imgur.com/Q1uYXnN.png" style="bottom: 5%; left:5%;  animation: float 2.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/XSLldLw.png" style="bottom: 20%; left:70%;  animation: float2 2.1s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/JeVSQ1I.png" style="bottom: 25%; left:73%;  animation: float3 2.3s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/s2ULJYw.png" style="top: 10%; left:30%;  animation: float 3s ease-in-out infinite;"/>
+        </div>
+    </div>
+    <div class="w3-col m6 w3-right" style="height: 100%">
+        <div class="shapeContainer">
+
+            <img class="shape" src="https://i.imgur.com/JeVSQ1I.png" style="left:0%; top: 25%;  animation: float3 3.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/Q1uYXnN.png" style="bottom: 15%; right:30%;  animation: float 2.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/hBmDbjp.png" style="top: 15%; right:5%; transform: scale(.3);  animation: float2 2.8s ease-in-out infinite; )"/>
+            <img class="shape" src="https://i.imgur.com/DHP5frv.png" style=" right: -20%; bottom:-45%; animation: floatDiagonal1 3s ease-in-out infinite;"/>
+        </div>
+    </div>
+    
+    
+</div>
+<!-- END OF BACKGROUND SHAPES -->
+    
+    
+    
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function openOverlay() {
+    document.getElementById("videoOverlay").style.height = "100%";
+    document.getElementById("videoOverlay").style.opacity = "1";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeOverlay() {
+    document.getElementById("videoOverlay").style.height = "0%";
+    document.getElementById("videoOverlay").style.opacity = "0";
+}
+    
+
+	
+</script>
+
+<script>
+
+    var c1 = false;
+    var c2 = false;
+    
+    
+    
+    function click1(){
+        c1 = true;
+        c2 = false;
+    }
+    function click2(){
+        if(c1==true)
+            c2=true;
+    }
+    function click3(){
+        if(c1&&c2)
+            openOverlay();
+        else
+            c1=false;
+            c2=false;
+    }
+
+</script>
+    
+    
+
+</body>
+</html>

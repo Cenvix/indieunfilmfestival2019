@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<title>Indie-Un Film Festival 2019</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+    
+<link rel="shortcut icon" type="image/x-icon" href="assets/IUF-Logo.png" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- UPLOAD THESE -->
+<link rel="stylesheet" href="colors.css">
+<link rel="stylesheet" href="mytemplate.css">
+    
+<style>
+    
+    
+    body {
+    font-family: "Montserrat", sans-serif;
+    background: url('assets/Finalists/BG.png');
+        background-attachment: fixed;
+    line-height: 1.1;
+    }
+    
+
+    
+    .mySlides {display: none}
+    
+    
+    
+    
+        
+    
+    
+    iframe {display:none !important;}
+    
+    iframe.video {display:block !important; height: 50%;}
+    
+    h1{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h2{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h3{
+      font-family: "Montserrat", sans-serif;  
+        font-weight: 700;
+    }
+    h4{
+      font-family: "Montserrat", sans-serif;  
+    }
+    
+    .w3-button.w3-iuf-red:hover{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+    .w3-button.w3-focus,.w3-button:hover, .w3-button:focus{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+    
+    
+</style>
+    
+    
+    
+    
+     <script type="text/javascript">
+        $(window).load(function() {
+        setTimeout(function(){
+              $('.loader').fadeOut('slow', function () {
+              });
+          },1000); // set the time here
+      })
+         
+         
+    
+    </script>
+<body>
+<!--<div class="loader"></div>-->
+  
+
+<!-- Use any element to open/show the overlay navigation menu -->
+    
+<!-- Navbar -->
+<div class="w3-top" style="z-index: 100;">
+    <div style="position: fixed; width: 50px" >
+        <a href="http://www.indieunfilmfestival.com"><img src="assets/IUF-Logo.png" style="width: 100%;"/></a>
+      </div>
+    
+  <div class="w3-bar w3-large w3-iuf-white w3-card">
+    
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+      <a href="#" class="w3-bar-item" style="width: 5%"></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">EVENTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-iuf-yellow">
+        <a href="calendar.html" class="w3-bar-item w3-button">CALENDAR</a>
+<!--        <a href="talks" class="w3-bar-item w3-button">TALKS</a>-->
+        <a href="screenings.html" class="w3-bar-item w3-button">SCREENINGS</a>
+          <a href="awardsnight.html" class="w3-bar-item w3-button">AWARDS NIGHT</a>
+      </div>
+    </div>
+    <a href="finalists.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FINALISTS</a>
+    <a href="judges.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JUDGES</a>
+<!--    <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a> -->
+      <a href="faqs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQs</a>
+    <a class="w3-bar-item w3-right w3-hide-small w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="https://tinyurl.com/IUF2019Tickets">GET TICKETS</a>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-iuf-yellow w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:50px;padding-bottom:10px">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+    <a class="w3-padding-large">EVENTS</a>
+    <ul>
+        <a href="calendar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CALENDAR</a>
+<!--        <a href="talks.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TALKS</a>-->
+        <a href="screenings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCREENINGS</a>
+        <a href="awardsnight.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AWARDS NIGHTS</a>
+    </ul>
+    <a href="finalists.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FINALIST</a>
+    <a href="judges.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JUDGES</a>
+    <!-- <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPONSORS</a> -->
+    <a href="faqs.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAQs</a>
+    <a href="#" class="w3-bar-item w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="https://tinyurl.com/IUF2019Tickets">GET TICKETS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-container w3-center" style="margin-top:46px; margin-bottom: 100px;">
+    <div class="w3-container w3-row "style="margin-top:80px">
+        <img src="assets/Finalists/Finalists.png" style="width: 50%" />
+    </div>
+    <div class="w3-container w3-row " style="margin-left: 10%;margin-right: 10%;" >
+        <div class=" w3-row w3-left"  >
+            <h1 style="text-align: left">  
+                <img src="assets/Finalists/Feature.png" style="width: 50%" />
+                <a href="https://www.youtube.com/playlist?list=PL0etKYmWI3AifKh8qTt6Ha-mJxMo9iF9W" target="_blank" class="w3-button w3-medium w3-iuf-orange w3-round-medium" style="font-weight: 700;">Watch Trailers</a>
+            </h1>
+        </div>
+        <div class=" w3-row" id="feature-row" >
+
+        </div>
+        <div class=" w3-row w3-left"  >
+            <h1 style="text-align: left">  
+                <img src="assets/Finalists/Documentary.png" style="width: 50%" />
+                <a href="https://www.youtube.com/playlist?list=PL0etKYmWI3Ahc2XHxda7ABzIDELWgPaaF" target="_blank" class="w3-button w3-medium w3-iuf-orange w3-round-medium" style="font-weight: 700;">Watch Trailers</a>
+            </h1>
+        </div>
+        <div class=" w3-row" id="documentary-row" >
+
+        </div>
+        <div class=" w3-row w3-left"  >
+            <h1 style="text-align: left">  
+                <img src="assets/Finalists/Experimental.png" style="width: 50%" />
+                <a href="https://www.youtube.com/playlist?list=PL0etKYmWI3Ai6Xm3uSXf1KzBcaMkCR3-g" target="_blank" class="w3-button w3-medium w3-iuf-orange w3-round-medium" style="font-weight: 700;">Watch Trailers</a>
+            </h1>
+        </div>
+        <div class=" w3-row" id="experimental-row" >
+
+        </div>
+        <div class=" w3-row w3-left"  >
+            <h1 style="text-align: left">  
+                <img src="assets/Finalists/Music%20Video.png" style="width: 50%" />
+                <a href="https://www.youtube.com/playlist?list=PL0etKYmWI3AhhibwRdYnwgym_QQ6bp7L1" target="_blank" class="w3-button w3-medium w3-iuf-orange w3-round-medium" style="font-weight: 700;">Watch Trailers</a>
+            </h1>
+        </div>
+        <div class=" w3-row" id="musicvideo-row" >
+
+        </div>
+        <div class=" w3-row w3-left"  >
+            <h1 style="text-align: left">  
+                <img src="assets/Finalists/SHS.png" style="width: 45%" />
+                <a href="https://www.youtube.com/playlist?list=PL0etKYmWI3Ah0QAQ6nUy1c73PRN6Q-Qe1" target="_blank" class="w3-button w3-medium w3-iuf-orange w3-round-medium" style="font-weight: 700;">Watch Trailers</a>
+            </h1>
+        </div>
+        <div class=" w3-row" id="pamana-row" >
+
+        </div>
+    </div>
+    
+<!-- End Page Content -->
+</div>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-margin-top" style=" width: 100%;">
+    
+    <center>
+        <img src="https://78.media.tumblr.com/f084ed3fcd2f94735f460c0f37aa53e4/tumblr_ozvoebwrCq1w6qdn7o1_1280.png" style="width: 20%; min-width: 100px;"/>
+    </center>
+      
+    <div>
+        
+            &copy; Copyright 2019 DLSU Green Media Group
+        
+        <br>
+    </div>
+</footer>
+<!-- End of Footer-->
+<!-- BACKGROUND SHAPES -->
+<!--
+<div class="w3-row shapeBG"  style="background:linear-gradient(to bottom, #ffe892 10%,#aad8ce 70%);" >
+    <div class="w3-col m6 w3-left image-container" style="height: 100%">
+        <div class="shapeContainer">
+            <img class="shape" src="https://i.imgur.com/DHP5frv.png" style=" left: -20%; top:-45%; animation: floatDiagonal2 3s ease-in-out infinite;"/>
+            
+            <img class="shape" src="https://i.imgur.com/Q1uYXnN.png" style="bottom: 5%; left:5%;  animation: float 2.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/XSLldLw.png" style="bottom: 20%; left:70%;  animation: float2 2.1s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/JeVSQ1I.png" style="bottom: 25%; left:73%;  animation: float3 2.3s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/s2ULJYw.png" style="top: 10%; left:30%;  animation: float 3s ease-in-out infinite;"/>
+        </div>
+    </div>
+    <div class="w3-col m6 w3-right" style="height: 100%">
+        <div class="shapeContainer">
+
+            <img class="shape" src="https://i.imgur.com/JeVSQ1I.png" style="left:0%; top: 25%;  animation: float3 3.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/Q1uYXnN.png" style="bottom: 15%; right:30%;  animation: float 2.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/hBmDbjp.png" style="top: 15%; right:5%; transform: scale(.3);  animation: float2 2.8s ease-in-out infinite; )"/>
+            <img class="shape" src="https://i.imgur.com/DHP5frv.png" style=" right: -20%; bottom:-45%; animation: floatDiagonal1 3s ease-in-out infinite;"/>
+        </div>
+    </div>
+    
+    
+</div>
+-->
+<!-- END OF BACKGROUND SHAPES -->
+    
+    
+    
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function openOverlay() {
+    document.getElementById("videoOverlay").style.height = "100%";
+    document.getElementById("videoOverlay").style.opacity = "1";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeOverlay() {
+    document.getElementById("videoOverlay").style.height = "0%";
+    document.getElementById("videoOverlay").style.opacity = "0";
+    
+    var $frame = $('iframe#video');
+
+    // saves the current iframe source
+    var vidsrc = $frame.attr('src');
+
+    // sets the source to nothing, stopping the video
+    $frame.attr('src',''); 
+
+    // sets it back to the correct link so that it reloads immediately on the next window open
+    $frame.attr('src', "https://player.vimeo.com/video/256367060");
+}
+
+	
+</script>
+
+<script>
+    class Film{
+                 constructor(title, desc,poster){
+                     this.title = title;
+                     this.desc = desc;
+                     this.poster = "assets/Finalists/Posters/"+poster;
+                     //this.poster = poster;
+                 }
+             }
+
+    var features = [];
+    var documentaries= [];
+    var experimentals = [];
+    var musicvideos = [];
+    var pamanas = [];
+
+
+features.push(new Film("Once Lang Magkafirst Love","A high school student experiences first love while a huge pimple grows on her nose.","feat/1.jpg"));
+
+features.push(new Film("Ang'gulo","Isang kasambahay na nagtatrabaho sa isang pamilya ay biktima ng isang modus na Operandi na tinatawag na 'Dugo-Dugo'","feat/2.jpg"));
+
+features.push(new Film("Kurozetto","Anton, who’s getting tired of his monotonous life, suddenly encounters a cosplayer in a train station while he was on his way to work.","feat/3.jpg"));
+
+features.push(new Film("NEURO","A couple strives to cope emotionally and financially in a capitalist society centered on Neuro, an app-controlled technology that enables one to manipulate their emotions.","feat/4.jpg"));
+
+features.push(new Film("Gáring","A loving mother faces the hardest challenge of her life, leaving her with no choice but to abandon her belief to save her son.","feat/5.jpg"));
+
+features.push(new Film("Mata","When he tried to catch the perpetrator of a crime committed in front of his burger stand, he made a decision that he will regret for the rest of his life.","feat/6.jpg"));
+
+features.push(new Film("Ang Lumunod sa Atin","Teenager, Rom comes home, after years of living away from his mother and his hometown. Back home, a monstrous creature starts following him as he starts to unravel long-forgotten secrets from his past.","feat/7.jpg"));
+
+features.push(new Film("Ang Pagiging Babae","Karen, an indigenous people&#39;s and women&#39;s rights advocate, tries to navigate her role as a daughter, and her place as a woman in a tumultuous society.","feat/8.jpg"));
+
+features.push(new Film("Ang Nawalang Haligi","Isang Ama na nangungulila sa anak.Hanggang saan ang kaya niyang gawin para sa kanyang anak?","feat/9.jpg"));
+
+features.push(new Film("Para Kay James"," Cedric goes to the wake of his deceased lover, James. While trying to gather the courage to tell James' mother, Carol, about their relationship, both Cedric and Carol journey through their memories with the departed. The film tackles grief and the many forms it takes.","feat/10.jpg"));
+
+features.push(new Film("Kibo","A mute teenage boy wants to confess his feelings to the girl of his dreams before the last day of class.","feat/11.jpg"));
+
+//DOCUMENTARY
+    
+
+documentaries.push(new Film("Lulubog, Aahon",	"Lulubog, Aahon is a documentary about a young boy from Paombong, Bulacan who goes into a deep mud pond to catch fish for his family. Aside from being a helpful son, he is also an outstanding student who values education very much.","doc/1.jpg"));
+    
+documentaries.push(new Film("Sa Pagitan ng Kapanig at Dayuhan",	"During the Japanese occupation in the Philippines, a group of Chinese residing in the country known as the Wha Chi 48th Squadron decided to group together and fight alongside the Americans and the Filipinos. However, despite early signs of comradery and friendship, the Chinese-Filipinos remain antagonized and seen as not Filipino enough until today. ","doc/2.jpg"));
+    
+documentaries.push(new Film("Pasan Pasang Pag-asa",	"This documentary is about Agnes Andes the only girl in Wawa Dam, who carries goods up and down to the mountains to support her family. Agnes Adnes carries good from the lowland up to the mountains. It is their source of income. She doesn&#39;t mind the weight, hardships and exhaustion because for her, she carries the hope of her children to finish their studies and reach their dreams.","doc/3.jpg"));
+    
+documentaries.push(new Film("How the Beasts Got Hyped",	"’How the Beasts Got Hyped’ whose conception was initially focused on documenting the day-to-day activities of these local hypebeasts evolved to become more than what has been primarily outlined. The story recognises the importance of collective identity, camaraderie and solidarity in the face of “the animosity of the majority,” or just simply rediscovering a lost freedom ","doc/4.jpg"));
+
+
+//EXPERIMENTAL
+experimentals.push(new Film("Juan-Diablo-Pablo",	"Juan Diablo who has been embalming for a very long time, meets a boy named Pablo that changes how he perceives his own world.","exp/1.jpg"));
+    
+experimentals.push(new Film("Sating Sariling Salamangkang Salamin",	"A human was abducted to be a slave for a motherboard-like humanoid. Worrying he might be held captive or killed like the others who tried to escape, he fought back to save himself. But just when he thought he won, the real villain appears." ,"exp/2.jpg"));
+    
+experimentals.push(new Film("555",	"Served with a plate of empty promises and lies, a contractual worker craves for progress and stability as he demands a fair share of his rights.","exp/3.jpg"));
+    
+experimentals.push(new Film("Metamorphosis", 	"This is a story about the cyclic battle of life and death wherein death tries to outgrow and consume the power of life in a myriad of ways, forcing its way to prevail. Will the cycle ever stop?","exp/4.jpg"));
+    
+experimentals.push(new Film("Voyeur",	"Trapped in society’s expectations. Disillusioned by the media’s elaborate realities… She struggles and the voyeur continues to watch","exp/5.jpg"));
+
+
+//MUSIC VIDEO
+musicvideos.push(new Film("Let Go by Jamey","A broken-hearted girl is trapped in a room where she seeks for ways to patch herself back to how she was.","mv/1.jpg"));
+
+musicvideos.push(new Film("ABOT KAMAY","It will show what love can do.","mv/2.jpg"));
+
+musicvideos.push(new Film("Bayad Po","This music video features the ‘​jeepney culture ​ ’ and how it resembles our society’s perceptions towards gender and gender expressions. It presents characters that promote love amidst discrimination, freedom to choose how we want to express ourselves, being proud and confident with the choices that we make, and most especially, a collective effort to disintegrate existing gender stereotypes and gender norms through tolerance and acceptance.","mv/3.jpg"));
+
+
+
+//PAMANA
+pamanas.push(new Film("Isa Akong Batang Nakakulong","In the year 2034, the rules have changed. A young boy was awaken by every child's worst nightmare. ","shs/1.jpg"));
+
+pamanas.push(new Film("Liham ng Bilanggo","A boy, conflicted with his own feelings tries to face the music, ready to confess, ready to accept the outcome.","shs/2.jpg"));
+
+pamanas.push(new Film("Ina ng Laging Saklolo","Si Belen ay isang ina. Mapagmahal, mapag-aruga, masipag at higit sa lahat relihiyoso. Masusubukan ang kanyang paniniwala sa sarili at sa Diyos sa isang problemang pangpinansyal.","shs/3.jpg"));
+
+
+
+
+    
+    var featHTML ="";
+    var featNames=[];
+    for(i=0; i<features.length;i++){
+        if(i%4==0)
+            featHTML+= "<div class='w3-row'>";
+        featHTML += "<div class='w3-content w3-col m3 w3-padding'>"+
+                        "<div class='w3-card overlayContainer'>"+
+                            "<img   src='"+
+                            features[i].poster+
+                            "' style='width: 100%; display: block'/>"+
+                            
+                            "<div class='textOverlay'>"+    
+                                "<div class='textOverlayText'>"+
+                                    features[i].desc+
+                                "</div>"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+        
+        featNames.push(features[i].title);
+        
+        if(i%4==3)
+            featHTML+= "</div>";
+        
+        if(i+1==features.length || i%4==3){
+            featHTML+="<div class='w3-row'>"
+            for(j=0;j<featNames.length;j++){
+                featHTML+="<div class='w3-content w3-col m3 w3-padding'><h3 style='color:white'>"+featNames[j]+"</h3></div>"; 
+            }
+            featHTML+="</div>"
+            featNames=[];
+        }
+    }
+    
+    $("#feature-row").html(featHTML);
+    
+    var docHTML ="";
+    var docNames=[];
+    for(i=0; i<documentaries.length;i++){
+        if(i%4==0)
+            docHTML+= "<div class='w3-row'>";
+        docHTML += "<div class='w3-content w3-col m3 w3-padding'>"+
+                        "<div class='w3-card overlayContainer'>"+
+                            "<img   src='"+
+                            documentaries[i].poster+
+                            "' style='width: 100%; display: block'/>"+
+                            
+                            "<div class='textOverlay'>"+    
+                                "<div class='textOverlayText'>"+
+                                    documentaries[i].desc+
+                                "</div>"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+        docNames.push(documentaries[i].title);
+        
+        if(i%4==3)
+            docHTML+= "</div>";
+        
+        if(i+1==documentaries.length || i%4==3){
+            docHTML+="<div class='w3-row'>"
+            for(j=0;j<docNames.length;j++){
+                docHTML+="<div class='w3-content w3-col m3 w3-padding'><h3 style='color:white'>"+docNames[j]+"</h3></div>"; 
+            }
+            docHTML+="</div>"
+            docNames=[];
+        }
+        
+        
+    }
+    
+    $("#documentary-row").html(docHTML);
+    
+    var expHTML ="";
+    var expNames=[];
+    for(i=0; i<experimentals.length;i++){
+        if(i%4==0)
+            expHTML+= "<div class='w3-row'>";
+        expHTML += "<div class='w3-content w3-col m3 w3-padding'>"+
+                        "<div class='w3-card overlayContainer'>"+
+                            "<img   src='"+
+                            experimentals[i].poster+
+                            "' style='width: 100%; display: block'/>"+
+                            
+                            "<div class='textOverlay'>"+    
+                                "<div class='textOverlayText'>"+
+                                    experimentals[i].desc+
+                                "</div>"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+        
+        expNames.push(experimentals[i].title);
+        
+        if(i%4==3)
+            expHTML+= "</div>";
+        
+        if(i+1==experimentals.length || i%4==3){
+            expHTML+="<div class='w3-row'>"
+            for(j=0;j<expNames.length;j++){
+                expHTML+="<div class='w3-content w3-col m3 w3-padding'><h3 style='color:white'>"+expNames[j]+"</h3></div>"; 
+            }
+            expHTML+="</div>"
+            expNames = [];
+        }
+    }
+    
+    $("#experimental-row").html(expHTML);
+    
+    var mvHTML ="";
+    var mvNames = [];
+    for(i=0; i<musicvideos.length;i++){
+        if(i%4==0)
+            mvHTML+= "<div class='w3-row'>";
+        mvHTML += "<div class='w3-content w3-col m3 w3-padding'>"+
+                        "<div class='w3-card overlayContainer'>"+
+                            "<img   src='"+
+                            musicvideos[i].poster+
+                            "' style='width: 100%; display: block'/>"+
+                            
+                            "<div class='textOverlay'>"+    
+                                "<div class='textOverlayText'>"+
+                                    musicvideos[i].desc+
+                                "</div>"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+        
+        mvNames.push(musicvideos[i].title);
+        
+        if(i%4==3)
+            mvHTML+= "</div>";
+        
+        if(i+1==musicvideos.length || i%4==3){
+            mvHTML+="<div class='w3-row'>"
+            for(j=0;j<mvNames.length;j++){
+                mvHTML+="<div class='w3-content w3-col m3 w3-padding'><h3 style='color:white'>"+mvNames[j]+"</h3></div>"; 
+            }
+            mvHTML+="</div>"
+            mvNames = [];
+        }
+    }
+    
+    $("#musicvideo-row").html(mvHTML);
+    
+    var pamHTML ="";
+    var pamNames = [];
+    for(i=0; i<pamanas.length;i++){
+        if(i%4==0)
+            pamHTML+= "<div class='w3-row'>";
+        pamHTML += "<div class='w3-content w3-col m3 w3-padding'>"+
+                        "<div class='w3-card overlayContainer'>"+
+                            "<img   src='"+
+                            pamanas[i].poster+
+                            "' style='width: 100%; display: block'/>"+
+                            
+                            "<div class='textOverlay'>"+    
+                                "<div class='textOverlayText'>"+
+                                    pamanas[i].desc+
+                                "</div>"+
+                            "</div>"+
+                        "</div>"+
+                    "</div>";
+        
+        pamNames.push(pamanas[i].title);
+        
+        if(i%4==3)
+            pamHTML+= "</div>";
+        
+        if(i+1==pamanas.length || i%4==3){
+            pamHTML+="<div class='w3-row'>"
+            for(j=0;j<pamNames.length;j++){
+                pamHTML+="<div class='w3-content w3-col m3 w3-padding'><h3 style='color:white'>"+pamNames[j]+"</h3></div>"; 
+            }
+            pamHTML+="</div>"
+            pamNames = [];
+        }
+    }
+    
+    $("#pamana-row").html(pamHTML);
+    
+    
+    
+            
+</script>
+    
+
+</body>
+</html>

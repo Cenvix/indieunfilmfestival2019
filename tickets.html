@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<title>Indie-Un Film Festival 2018</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+    
+<link rel="shortcut icon" type="image/x-icon" href="assets/IUF-Logo.png" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://static.tumblr.com/k8kqqqs/TeHozvwr9/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="http://static.tumblr.com/k8kqqqs/RDLozvwrc/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- UPLOAD THESE -->
+<link rel="stylesheet" href="colors.css">
+<link rel="stylesheet" href="mytemplate.css">
+    
+<style>
+    
+    
+    body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f2f7fc;
+    background-repeat: repeat-x;
+    line-height: 1.1;
+    }
+    
+
+    
+    .mySlides {display: none}
+    
+    iframe {display:none !important;}
+    
+    iframe.video {display:block !important; height: 50%;}
+    
+    h1{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h2{
+      font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+    }
+    h3{
+      font-family: "Montserrat", sans-serif;  
+        font-weight: 700;
+    }
+    h4{
+      font-family: "Montserrat", sans-serif;  
+    }
+    
+    .w3-button.w3-iuf-red:hover{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+    .w3-button.w3-focus,.w3-button:hover, .w3-button:focus{
+        background-color: #ee886f !important;
+        color: #f2f7fc !important;
+    }
+    
+   
+</style>
+    
+     <script type="text/javascript">
+        $(window).load(function() {
+        setTimeout(function(){
+              $('.loader').fadeOut('slow', function () {
+              });
+          },1000); // set the time here
+      })
+    </script>
+<body>
+<div class="loader"></div>
+    
+
+
+<!-- Use any element to open/show the overlay navigation menu -->
+    
+<!-- Navbar -->
+<div class="w3-top" style="z-index: 100;">
+    <div style="position: fixed; width: 50px" >
+        <a href="http://www.indieunfilmfestival.com"><img src="assets/IUF-Logo.png" style="width: 100%;"/></a>
+      </div>
+    
+  <div class="w3-bar w3-large w3-iuf-white w3-card">
+    
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+      <a href="#" class="w3-bar-item" style="width: 5%"></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">EVENTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-iuf-yellow">
+        <a href="calendar.html" class="w3-bar-item w3-button">CALENDAR</a>
+<!--        <a href="talks" class="w3-bar-item w3-button">TALKS</a>-->
+        <a href="screenings.html" class="w3-bar-item w3-button">SCREENINGS</a>
+          <a href="awardsnight.html" class="w3-bar-item w3-button">AWARDS NIGHT</a>
+      </div>
+    </div>
+    <a href="finalists.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FINALISTS</a>
+    <a href="judges.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JUDGES</a>
+<!--    <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SPONSORS</a> -->
+      <a href="faqs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQs</a>
+    <a class="w3-bar-item w3-right w3-hide-small w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="https://tinyurl.com/IUF2019Tickets">GET TICKETS</a>
+
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-iuf-yellow w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:50px;padding-bottom:10px">
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+    <a class="w3-padding-large">EVENTS</a>
+    <ul>
+        <a href="calendar.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CALENDAR</a>
+<!--        <a href="talks.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TALKS</a>-->
+        <a href="screenings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCREENINGS</a>
+        <a href="awardsnight.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">AWARDS NIGHTS</a>
+    </ul>
+    <a href="finalists.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FINALIST</a>
+    <a href="judges.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JUDGES</a>
+    <!-- <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SPONSORS</a> -->
+    <a href="faqs.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAQs</a>
+    <a href="#" class="w3-bar-item w3-button w3-iuf-red w3-round-large" style="font-weight: 700; margin-top: 4px; margin-right: 10px" href="https://tinyurl.com/IUF2019Tickets">GET TICKETS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-container" style="margin-top:100px; margin-left: 15%; margin-right: 15%;">
+
+    <div class="w3-row w3-center">
+        <img src="https://drive.google.com/uc?id=1mdboh8pUO9SiUz3U8gnbUluzVIxoJjWA">
+    </div>
+    
+    <div class="w3-row w3-center w3-xlarge" style="margin-top: 40px;">
+        
+        <div class="w3-col m4" >
+
+            <div class="w3-container zoom w3-center">
+                <img src="https://i.imgur.com/3WzpHu2.png" style="width:90%;">
+            </div>
+            <div class="w3-container">
+                <h3>
+                    Screening<br>
+                    P180<br>
+                </h3>
+                <p style="text-align: center">
+                    Catch the works of this year’s finalists in our three screening sets this year! Each set features a different line up of films, so be sure to watch them all.
+                </p>
+                <ul style="text-align: left">
+                    <li>Screening A (July 19)</li>
+                    <li>Screening B (July 20)</li>
+                    <li>Screening C (July 21)</li>
+                </ul>
+                
+            </div>
+        </div>
+   
+        <div class="w3-col m4">
+
+            <div class="w3-container zoom w3-center">
+                <img src="https://i.imgur.com/1FwmdcU.png" style="width:90%;">
+            </div>
+            <div class="w3-container">
+                <h3>
+                    IUF Talks<br>
+                    P250<br>
+                </h3>    
+                <p style="text-align: center">
+                    Our festival’s plenary event provides the audience with a unique opportunity to interact with some of Philippine cinema’s best and brightest.
+                </p>
+            </div>
+        </div>        
+        
+        <div class="w3-col m4">
+
+            <div class="w3-container zoom w3-center">
+                <img src="https://i.imgur.com/hPwDfm4.png" style="width:90%; height: auto;">
+            </div>
+            <div class="w3-container">
+                <h3>
+                    Festival Pass<br>
+                    P560<br>
+                </h3>
+                <p style="text-align: center">
+                    With just one pass, you can get access to IUF Talks, Screening A and B, and awards night. Perfect for film enthusiasts!
+                </p>
+            </div>
+        </div>        
+        
+    </div>
+    
+    <div class="w3-row w3-center" style="margin-top: 40px;">
+        <h1><i class="fa fa-ticket"></i> GET YOUR TICKETS NOW:</h1>
+    </div>
+    
+    <div class="w3-row w3-xlarge" style="margin-top: 40px;">
+    
+        <div class="w3-col m6 w3-left">
+            <div class="w3-container">
+                <h2>
+                    <img src="https://i.imgur.com/SbQlIqx.png" style="width: 50px">
+                    Direct Purchase
+                </h2>
+                
+            </div>
+            <div class="w3-container">
+                <p>
+                    Lasallians may visit the IUF 2018 booth at SJ Bench 6 and 7 starting July 3, 2018 from 10AM to 6PM.
+                </p>
+            </div>
+        </div>
+        <div class="w3-col m6 w3-right">
+            <div class="w3-container">
+                <div class="w3-row w3-left">
+                    <h2>
+                        <img src="https://drive.google.com/uc?id=1GS8m9YDJ4P6d6sH6CWn8PHaKCyIBXof0" style="width:50px; height: auto;">
+                        <img src="https://drive.google.com/uc?id=12_kM9U95bTn1ULHsUde-LSipczSEQc6v" style="width:50px; height: auto;">
+                        Bank Deposit
+                    </h2>
+                </div>
+            </div>
+            <div class="w3-container">
+                <p>
+                    For outsiders, tickets may be purchased online through bank deposit (BPI or BDO). 
+                </p>
+            </div>
+            
+            <div class="w3-container">
+                <a href="https://form.jotform.me/81660739543463" target="_blank">
+                    <button class="w3-button w3-xlarge w3-iuf-red w3-round-large">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="w3-row w3-center" style="margin-top: 80px;">
+        <h1>Terms and Conditions</h1>
+    </div>
+    
+    <div class="w3-row w3-center w3-large" style="margin-top: 40px;">
+        <div class="w3-col m3">
+            <div class="w3-container">
+                <img src="https://i.imgur.com/0VO1Irv.png" width="50%">
+            </div>
+            <div class="w3-container">
+                <p>
+                    Tickets will be sold on a first-come, first-serve basis. Reservations will not be entertained.
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-col m3">
+            <div class="w3-container">
+                <img src="https://i.imgur.com/BUQUPpC.png" width="50%">
+            </div>
+            <div class="w3-container">
+                <p>
+                    All tickets are strictly non-refundable. 
+                </p>
+            </div>
+        </div>
+        
+        <div class="w3-col m3">
+            <div class="w3-container">
+                <img src="https://i.imgur.com/vaReZIt.png" width="50%">
+            </div>
+            <div class="w3-container">
+                <p>
+                    Festival Passes are non-transferrable. Pass holders must present a valid ID upon entry. 
+                </p>
+            </div>
+        </div>
+        
+         <div class="w3-col m3">
+            <div class="w3-container">
+                <img src="https://i.imgur.com/4DQzHLb.png" width="50%">
+            </div>
+            <div class="w3-container">
+                <p>
+                    Tickets are available online for a limited time only.  
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<!-- End Page Content -->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-margin-top" style=" width: 100%;">
+    
+    <center>
+        <img src="https://78.media.tumblr.com/f084ed3fcd2f94735f460c0f37aa53e4/tumblr_ozvoebwrCq1w6qdn7o1_1280.png" style="width: 20%; min-width: 100px;"/>
+    </center>
+      
+    <div>
+        
+            &copy; Copyright 2019 DLSU Green Media Group
+        
+        <br>
+    </div>
+</footer>
+<!-- End of Footer-->
+<!-- BACKGROUND SHAPES -->
+<div class="w3-row shapeBG" style="background:linear-gradient(to top, #ee886f ,#aad8ce 100%);" >
+    <div class="w3-col m6 w3-left image-container" style="height: 100%">
+        <div class="shapeContainer">
+            <img class="shape" src="https://i.imgur.com/DHP5frv.png" style=" left: -20%; top:-45%; animation: floatDiagonal2 3s ease-in-out infinite;"/>
+            
+            <img class="shape" src="https://i.imgur.com/Q1uYXnN.png" style="bottom: 5%; left:5%;  animation: float 2.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/XSLldLw.png" style="bottom: 20%; left:70%;  animation: float2 2.1s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/JeVSQ1I.png" style="bottom: 25%; left:73%;  animation: float3 2.3s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/s2ULJYw.png" style="top: 10%; left:30%;  animation: float 3s ease-in-out infinite;"/>
+        </div>
+    </div>
+    <div class="w3-col m6 w3-right" style="height: 100%">
+        <div class="shapeContainer">
+
+            <img class="shape" src="https://i.imgur.com/JeVSQ1I.png" style="left:0%; top: 25%;  animation: float3 3.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/Q1uYXnN.png" style="bottom: 15%; right:30%;  animation: float 2.5s ease-in-out infinite;"/>
+            <img class="shape" src="https://i.imgur.com/hBmDbjp.png" style="top: 15%; right:5%; transform: scale(.3);  animation: float2 2.8s ease-in-out infinite; )"/>
+            <img class="shape" src="https://i.imgur.com/DHP5frv.png" style=" right: -20%; bottom:-45%; animation: floatDiagonal1 3s ease-in-out infinite;"/>
+        </div>
+    </div>
+    
+    
+</div>
+<!-- END OF BACKGROUND SHAPES -->
+    
+    
+    
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function openOverlay() {
+    document.getElementById("videoOverlay").style.height = "100%";
+    document.getElementById("videoOverlay").style.opacity = "1";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeOverlay() {
+    document.getElementById("videoOverlay").style.height = "0%";
+    document.getElementById("videoOverlay").style.opacity = "0";
+    
+    var $frame = $('iframe#video');
+
+    // saves the current iframe source
+    var vidsrc = $frame.attr('src');
+
+    // sets the source to nothing, stopping the video
+    $frame.attr('src',''); 
+
+    // sets it back to the correct link so that it reloads immediately on the next window open
+    $frame.attr('src', "https://player.vimeo.com/video/256367060");
+}
+
+	
+</script>
+
+    
+    
+
+</body>
+</html>
